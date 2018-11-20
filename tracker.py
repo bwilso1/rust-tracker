@@ -82,6 +82,15 @@ def getSteamItems(query):
 	for div in steam_rows:
 		results.append(breakdown(div))
 	return results
+	#masks
+	#https://steamcommunity.com/market/search?category_252490_itemclass%5B%5D=any&category_252490_steamcat%5B%5D=tag_steamcat.armor&appid=252490&q=carbon-metalhunter-army-stainless+NOT+armored+NOT+Plate
+	
+	#chestplates
+	#https://steamcommunity.com/market/search?category_252490_itemclass%5B%5D=any&category_252490_steamcat%5B%5D=tag_steamcat.armor&appid=252490&q=plate-press+NOT+engineer+NOT+conquistador+NOT+machina+NOT+looter+NOT+racing+NOT+hazard+NOT+wander+NOT+Space
+	
+	#weapons
+	#https://steamcommunity.com/market/search?category_252490_itemclass%5B%5D=any&appid=252490&q=mp5-pearl+NOT+wild+NOT+dead+NOT+wasp+NOT+spitfire+NOT+nomad
+	
 	
 if __name__ == "__main__":
 	launch()
