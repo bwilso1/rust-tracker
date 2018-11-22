@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-class DataManager:
+class DataFileManager:
 	
 	def __init__(self,json_file_name = None):
 		if json_file_name:
@@ -23,7 +23,29 @@ class DataManager:
 		file = open(filename, 'w')
 		json.dump(self.holder,file,indent='\t')
 		
+		
+class Holder:
+	def __init__(self):
+		self.master_list = {}
+		
+	def addDollars(self, name, dollars):
+		if name not in self.master_list:
+			self.master_list[name] = {'coins': 0, 'dollars': dollars}
+		else:
+			self.master_list[name]['dollars'] = dollars
 			
+	def addCoins(self, name, coins):
+		if name not in self.master_list:
+			self.master_list[name] = {'coins': coins, 'dollars': 0.00}
+		else:
+			self.master_list[name]['coins'] = coins
+			
+	def dumpDict(self):
+		copy = self.master_list.copy()
+		self.master_list = {}
+		return copy
+		
+		
 			
 def today():
 	return str(datetime.date(datetime.now()))
