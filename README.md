@@ -9,15 +9,15 @@ this is a rough sketch of where I would like to take this program
 
 1. ~~Pull and parse data from SkinEarn.com and Steam Marketplace for rust for specific items~~  **Done**
 
-2. Merge extracted data from both sites into one data object
+2. ~~Merge extracted data from both sites into one data object~~ **Done**
 
-    A. ex: {"name": 'item', "steamPrice" : $x.xx, "skinearn price": yyyyy, "date": 'yy-mm-dd' }
+    A. ~~ex: {"name": 'item', "steamPrice" : $x.xx, "skinearn price": yyyyy, "date": 'yy-mm-dd' }~~ **Done**
     
-    B. possibly ommit records if no price change
+    B. possibly ommit records if no price change _in progress_
 
-3. Manage loading & adding on to persistent storage file
+3. ~~Manage loading & adding on to persistent storage file~~ **Done**
 
-4. Set up automation. (steam only allows 1 query per minute)
+4. ~~Set up automation. (steam only allows 1 query per minute)~~ *Done**
 
 5. Add a way to easily search for new items
 
