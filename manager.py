@@ -3,7 +3,7 @@ from datetime import datetime
 
 class DataFileManager:
 	
-	def __init__(self,json_file_name = None):
+	def __init__(self, json_file_name = None):
 		if json_file_name:
 			try:
 				file = open(json_file_name,'r')
@@ -17,7 +17,7 @@ class DataFileManager:
 		if name not in self.holder:
 			self.holder[name] = []
 
-		self.holder[name].append({'date' : today(),'cost': price, 'coins': coins })
+		self.holder[name].insert(0 ,{'date' : today(),'cost': price, 'coins': coins })
 		
 	def dump(self, filename):
 		file = open(filename, 'w')

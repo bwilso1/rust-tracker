@@ -21,6 +21,14 @@ this is a rough sketch of where I would like to take this program
 
 5. Add a way to easily search for new items
 
+
+## Configs
+
+GeckoDriver 24.0 for 64 Bit Firefox
+
+Mozilla 65.0.2 (64-bit)
+
+
 ## Warranty - License
 (MIT liscense)
 Copyright 2018 Bwilso1 - github.

@@ -14,7 +14,6 @@ from manager import DataFileManager,Holder
 
 STEAM_BASE_URL = "https://steamcommunity.com/market/search?appid=252490&q="
 
-
 SKIN_EARN_LINK = "https://skinearn.com/api/shop?orderBy=price&order=DESC&game_id=5&name=%s&offset=%s&limit=%s"
 
 STEAM_URLS = {'armor' : 'https://steamcommunity.com/market/search?category_252490_itemclass%5B%5D=any&category_252490_steamcat%5B%5D=tag_steamcat.armor&appid=252490&q=',
@@ -27,7 +26,7 @@ STEAM_QUERIES = [['armor','carbon-metalhunter-army-stainless+NOT+armored+NOT+Pla
 			  ]
 WAIT_TIME = 65
 
-SKIN_EARN_QUERIES = ['mp5', 'pearl+python','face','metalhunter','christmas lights','press']
+SKIN_EARN_QUERIES = ['mp5', 'pearl+python','face','metalhunter','christmas+lights','press']
 
 OUTFILE = 'stats.json'
 def launch():
